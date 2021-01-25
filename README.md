@@ -1,20 +1,11 @@
 # demoNuxt
 
-## Build Setup
+## 基礎建構
 
 ```bash
-# install dependencies
-$ yarn install
+# install yarn dependencies image
+$ docker build -t demo-nuxt:npm -f npm.Dockerfile .
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+# start
+$ docker-compose up -d
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
